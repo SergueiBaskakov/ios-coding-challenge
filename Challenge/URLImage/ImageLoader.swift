@@ -14,7 +14,6 @@ class ImageLoader: ObservableObject {
     private let url: URL?
     private var cancellable: AnyCancellable?
     var status: Status = .unknown
-    private static let imageProcessingQueue = DispatchQueue(label: "image-processing")
     
     init(url: URL?) {
         self.url = url
@@ -33,7 +32,6 @@ class ImageLoader: ObservableObject {
             cancellable = URLSession.shared.dataTaskPublisher(for: url!)
                 .map { UIImage(data: $0.data) }
                 .replaceError(with: nil)
-                .subscribe(on: Self.imageProcessingQueue)
                 .receive(on: DispatchQueue.main)
                 .sink {[weak self] completion in
                     self?.onFinish()
