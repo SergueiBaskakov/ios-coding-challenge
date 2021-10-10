@@ -14,6 +14,14 @@
 		9E0D009027135F4E00515290 /* ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D008F27135F4E00515290 /* ChallengeTests.swift */; };
 		9E0D009A27135F4E00515290 /* ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D009927135F4E00515290 /* ChallengeUITests.swift */; };
 		9E0D009C27135F4E00515290 /* ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D009B27135F4E00515290 /* ChallengeUITestsLaunchTests.swift */; };
+		9E0D00AE2713650C00515290 /* APIInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00AD2713650C00515290 /* APIInteractor.swift */; };
+		9E0D00B12713654400515290 /* BookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00B02713654400515290 /* BookRepository.swift */; };
+		9E0D00B42713658600515290 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00B32713658600515290 /* Book.swift */; };
+		9E0D00B72713665700515290 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00B62713665700515290 /* Environment.swift */; };
+		9E0D00BA2713687900515290 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00B92713687900515290 /* HomeView.swift */; };
+		9E0D00BC2713689200515290 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00BB2713689200515290 /* HomeViewModel.swift */; };
+		9E0D00C027136E6300515290 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00BF27136E6300515290 /* ImageLoader.swift */; };
+		9E0D00C227136E8100515290 /* URLImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0D00C127136E8100515290 /* URLImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,17 @@
 		9E0D009527135F4E00515290 /* ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E0D009927135F4E00515290 /* ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUITests.swift; sourceTree = "<group>"; };
 		9E0D009B27135F4E00515290 /* ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9E0D00A8271360A500515290 /* DEV.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DEV.xcconfig; sourceTree = "<group>"; };
+		9E0D00A9271360C400515290 /* PROD.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = PROD.xcconfig; sourceTree = "<group>"; };
+		9E0D00AB2713640300515290 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9E0D00AD2713650C00515290 /* APIInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIInteractor.swift; sourceTree = "<group>"; };
+		9E0D00B02713654400515290 /* BookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRepository.swift; sourceTree = "<group>"; };
+		9E0D00B32713658600515290 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		9E0D00B62713665700515290 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		9E0D00B92713687900515290 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		9E0D00BB2713689200515290 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		9E0D00BF27136E6300515290 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		9E0D00C127136E8100515290 /* URLImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLImage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +113,15 @@
 		9E0D007D27135F4A00515290 /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				9E0D00BE27136E5100515290 /* URLImage */,
+				9E0D00B82713686A00515290 /* Home */,
+				9E0D00B52713664000515290 /* Helpers */,
+				9E0D00B22713657A00515290 /* Models */,
+				9E0D00AF2713652F00515290 /* Repositories */,
+				9E0D00AC271364E400515290 /* APIInteractor */,
+				9E0D00A9271360C400515290 /* PROD.xcconfig */,
+				9E0D00A8271360A500515290 /* DEV.xcconfig */,
+				9E0D00AB2713640300515290 /* Info.plist */,
 				9E0D007E27135F4A00515290 /* ChallengeApp.swift */,
 				9E0D008027135F4A00515290 /* ContentView.swift */,
 				9E0D008227135F4E00515290 /* Assets.xcassets */,
@@ -125,6 +153,56 @@
 				9E0D009B27135F4E00515290 /* ChallengeUITestsLaunchTests.swift */,
 			);
 			path = ChallengeUITests;
+			sourceTree = "<group>";
+		};
+		9E0D00AC271364E400515290 /* APIInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D00AD2713650C00515290 /* APIInteractor.swift */,
+			);
+			path = APIInteractor;
+			sourceTree = "<group>";
+		};
+		9E0D00AF2713652F00515290 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D00B02713654400515290 /* BookRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9E0D00B22713657A00515290 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D00B32713658600515290 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		9E0D00B52713664000515290 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D00B62713665700515290 /* Environment.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9E0D00B82713686A00515290 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D00B92713687900515290 /* HomeView.swift */,
+				9E0D00BB2713689200515290 /* HomeViewModel.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		9E0D00BE27136E5100515290 /* URLImage */ = {
+			isa = PBXGroup;
+			children = (
+				9E0D00BF27136E6300515290 /* ImageLoader.swift */,
+				9E0D00C127136E8100515290 /* URLImage.swift */,
+			);
+			path = URLImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +336,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E0D008127135F4A00515290 /* ContentView.swift in Sources */,
+				9E0D00AE2713650C00515290 /* APIInteractor.swift in Sources */,
+				9E0D00B12713654400515290 /* BookRepository.swift in Sources */,
+				9E0D00C227136E8100515290 /* URLImage.swift in Sources */,
+				9E0D00B42713658600515290 /* Book.swift in Sources */,
 				9E0D007F27135F4A00515290 /* ChallengeApp.swift in Sources */,
+				9E0D00C027136E6300515290 /* ImageLoader.swift in Sources */,
+				9E0D00BC2713689200515290 /* HomeViewModel.swift in Sources */,
+				9E0D00BA2713687900515290 /* HomeView.swift in Sources */,
+				9E0D00B72713665700515290 /* Environment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +383,7 @@
 /* Begin XCBuildConfiguration section */
 		9E0D009D27135F4E00515290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A8271360A500515290 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -346,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -358,6 +445,7 @@
 		};
 		9E0D009E27135F4E00515290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A9271360C400515290 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -401,7 +489,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -413,14 +501,17 @@
 		};
 		9E0D00A027135F4E00515290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A8271360A500515290 /* DEV.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = V6WN74AC4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Challenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -436,20 +527,23 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9E0D00A127135F4E00515290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A9271360C400515290 /* PROD.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Challenge/Preview Content\"";
+				DEVELOPMENT_TEAM = V6WN74AC4M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Challenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -465,12 +559,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 		9E0D00A327135F4E00515290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A8271360A500515290 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -495,6 +590,7 @@
 		};
 		9E0D00A427135F4E00515290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A9271360C400515290 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -519,6 +615,7 @@
 		};
 		9E0D00A627135F4E00515290 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A8271360A500515290 /* DEV.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -541,6 +638,7 @@
 		};
 		9E0D00A727135F4E00515290 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E0D00A9271360C400515290 /* PROD.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
